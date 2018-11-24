@@ -8,7 +8,7 @@ z3 = s3(1):krok:s3(2);
 
 punkty = zeros(length(z1)*length(z2)*length(z3),13);
 
-starter = [-0.6001   -0.5645   -0.9420   -1.9483    1.0689    0.2599    0.3360    0.8036];
+starter = [-0.6768   -0.6647   -1.2360   -0.8496    2.1799    1.3514    1.7600    1.5371];
 for i=1:length(z1)
     if i>1 & punkty(length(z3)*length(z2)*(i-2)+1,6:13) ~= zeros(1,8)
         starter = punkty(length(z3)*length(z2)*(i-2)+1,6:13);

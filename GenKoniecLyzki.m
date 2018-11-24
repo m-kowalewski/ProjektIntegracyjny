@@ -1,7 +1,7 @@
 function [polozenie,katy] = GenKoniecLyzki(wymiary,s1,s2,s3,lyzka,starter)
 % Funkcja oblicza polozenie konca lyzki
 [katy,iteracje] = WezKaty(wymiary,s1,s2,s3,starter);
-if iteracje == 800
+if iteracje >90
    polozenie = [0,0];
    katy = [0,0,0,0,0,0,0,0];
    return

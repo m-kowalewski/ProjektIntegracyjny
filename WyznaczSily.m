@@ -85,7 +85,7 @@ Macierz(9,10)= 1;
 Macierz(10,9) = -sin(katy(7));
 Macierz(10,11)= 1;
 % Rownanie 11 ROWNOWAGA LOPATY M
-Macierz(11,10)=-Moment(katy(8),m8,[cos(katy(7)),sin(katy(7))]);
+Macierz(11,9)=-Moment(katy(8),m8,[cos(katy(7)),sin(katy(7))]);
 
 % Przypisanie obciezen do wektora obciazen - tutaj tylko lopata jest
 % obciazona wiec luzik
