@@ -61,12 +61,14 @@ L2 = sily(9)*[cos(katy(7));sin(katy(7))];
 FCx = [sily(10);0];
 FCy = [0;sily(11)];
 
+AXIS = [0 4000 -2000 2000];
+
 figure
 hold on;
 glowne = [punkty(1,:);punkty(3,:);punkty(4,:);punkty(2,:)];
 fill(glowne(:,1),glowne(:,2),'r');
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(FAx,mnoznik, punkty(1,:), 'black');
 RysujSkladowe(FAy,mnoznik, punkty(1,:), 'black');
 RysujSkladowe(S1,mnoznik, punkty(2,:), 'black');
@@ -84,7 +86,7 @@ hold on;
 ramie = [punkty(4,:);punkty(5,:);punkty(6,:);punkty(8,:);punkty(7,:)];
 fill(ramie(:,1),ramie(:,2),'r');
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(FBx,mnoznik, punkty(4,:), 'black');
 RysujSkladowe(FBy,mnoznik, punkty(4,:), 'black');
 RysujSkladowe(S2,mnoznik, punkty(5,:), 'black');
@@ -102,7 +104,7 @@ figure
 hold on;
 line([punkty(3,1);punkty(5,1)],[punkty(3,2);punkty(5,2)]);
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(S2,mnoznik, punkty(3,:), 'black');
 RysujSkladowe(-S2,mnoznik, punkty(5,:), 'black');
 
@@ -110,7 +112,7 @@ figure
 hold on;
 line([punkty(11,1);punkty(2,1)],[punkty(11,2);punkty(2,2)]);
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(S1,mnoznik, punkty(11,:), 'black');
 RysujSkladowe(-S1,mnoznik, punkty(2,:), 'black');
 
@@ -118,7 +120,7 @@ figure
 hold on;
 line(punkty(8:9,1),punkty(8:9,2),'Color','green');
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(L1,mnoznik, punkty(8,:), 'black');
 RysujSkladowe(-L1,mnoznik, punkty(9,:), 'black');
 
@@ -126,14 +128,14 @@ figure
 hold on;
 line([punkty(6,1);punkty(9,1)],[punkty(6,2);punkty(9,2)]);
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(S3,mnoznik, punkty(9,:), 'black');
 RysujSkladowe(-S3,mnoznik, punkty(6,:), 'black');
 
 figure
 hold on;
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(-S3,mnoznik, punkty(9,:), 'black');
 RysujSkladowe(L1,mnoznik, punkty(9,:), 'black');
 RysujSkladowe(L2,mnoznik, punkty(9,:), 'black');
@@ -144,7 +146,7 @@ figure
 hold on;
 line(punkty(9:10,1),punkty(9:10,2),'Color','green');
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(-L2,mnoznik, punkty(9,:), 'black');
 RysujSkladowe(L2,mnoznik, punkty(10,:), 'black');
 
@@ -153,7 +155,7 @@ hold on;
 lopat = [punkty(7,:);punkty(10,:);punkty(12,:)];
 fill(lopat(:,1),lopat(:,2),'y');
 pbaspect([1 1 1]);
-axis([0 3000 -1500 1500]);
+axis(AXIS);
 RysujSkladowe(FCx,mnoznik, punkty(7,:), 'black');
 RysujSkladowe(FCy,mnoznik, punkty(7,:), 'black');
 RysujSkladowe(-L2,mnoznik, punkty(10,:), 'black');
